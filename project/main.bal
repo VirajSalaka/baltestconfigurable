@@ -16,6 +16,7 @@ service / on new http:Listener(9090) {
         foreach string name in companyEmailRecipientsMapping.keys() {
             io:println(name, " : ", companyEmailRecipientsMapping[name]);
         }
+        io:println( "keys : ", companyEmailRecipientsMapping.keys());
         return "Hello, World!";
     }
 }
